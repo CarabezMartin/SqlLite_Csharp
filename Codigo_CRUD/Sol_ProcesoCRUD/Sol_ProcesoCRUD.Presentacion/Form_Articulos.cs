@@ -16,5 +16,10 @@ namespace Sol_ProcesoCRUD.Presentacion
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

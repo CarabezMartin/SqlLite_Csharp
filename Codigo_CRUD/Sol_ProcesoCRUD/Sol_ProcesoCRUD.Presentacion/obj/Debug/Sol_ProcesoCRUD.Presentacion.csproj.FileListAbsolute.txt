@@ -17,3 +17,4 @@ C:\CRUD_SqlLite_Csharp\Codigo_CRUD\Sol_ProcesoCRUD\Sol_ProcesoCRUD.Presentacion\
 C:\CRUD_SqlLite_Csharp\Codigo_CRUD\Sol_ProcesoCRUD\Sol_ProcesoCRUD.Presentacion\obj\Debug\Sol_ProcesoCRUD.Presentacion.csproj.CopyComplete
 C:\CRUD_SqlLite_Csharp\Codigo_CRUD\Sol_ProcesoCRUD\Sol_ProcesoCRUD.Presentacion\obj\Debug\Sol_ProcesoCRUD.Presentacion.exe
 C:\CRUD_SqlLite_Csharp\Codigo_CRUD\Sol_ProcesoCRUD\Sol_ProcesoCRUD.Presentacion\obj\Debug\Sol_ProcesoCRUD.Presentacion.pdb
+C:\CRUD_SqlLite_Csharp\Codigo_CRUD\Sol_ProcesoCRUD\Sol_ProcesoCRUD.Presentacion\obj\Debug\Sol_ProcesoCRUD.Presentacion.Form_Articulos.resources
