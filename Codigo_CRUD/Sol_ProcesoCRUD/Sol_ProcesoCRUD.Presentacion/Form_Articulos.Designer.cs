@@ -56,12 +56,11 @@ namespace Sol_ProcesoCRUD.Presentacion
             // dtgArticulos
             // 
             this.dtgArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgArticulos.Location = new System.Drawing.Point(15, 54);
-            this.dtgArticulos.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgArticulos.Location = new System.Drawing.Point(22, 83);
             this.dtgArticulos.Name = "dtgArticulos";
             this.dtgArticulos.RowHeadersWidth = 62;
             this.dtgArticulos.RowTemplate.Height = 28;
-            this.dtgArticulos.Size = new System.Drawing.Size(502, 270);
+            this.dtgArticulos.Size = new System.Drawing.Size(753, 415);
             this.dtgArticulos.TabIndex = 0;
             // 
             // lblBuscar
@@ -69,20 +68,18 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.lblBuscar.Location = new System.Drawing.Point(11, 21);
-            this.lblBuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBuscar.Location = new System.Drawing.Point(16, 32);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(70, 19);
+            this.lblBuscar.Size = new System.Drawing.Size(100, 29);
             this.lblBuscar.TabIndex = 1;
             this.lblBuscar.Text = "Buscar:";
             // 
             // txtArticulo
             // 
             this.txtArticulo.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticulo.Location = new System.Drawing.Point(81, 17);
-            this.txtArticulo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArticulo.Location = new System.Drawing.Point(122, 26);
             this.txtArticulo.Name = "txtArticulo";
-            this.txtArticulo.Size = new System.Drawing.Size(357, 23);
+            this.txtArticulo.Size = new System.Drawing.Size(534, 30);
             this.txtArticulo.TabIndex = 2;
             // 
             // btnBuscar
@@ -91,10 +88,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnBuscar.Location = new System.Drawing.Point(442, 11);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Location = new System.Drawing.Point(663, 17);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 29);
+            this.btnBuscar.Size = new System.Drawing.Size(112, 45);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Aceptar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -107,10 +103,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnNuevo.ImageKey = "(ninguno)";
-            this.btnNuevo.Location = new System.Drawing.Point(15, 337);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevo.Location = new System.Drawing.Point(22, 518);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 64);
+            this.btnNuevo.Size = new System.Drawing.Size(112, 98);
             this.btnNuevo.TabIndex = 4;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
@@ -123,13 +118,13 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnEditar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
             this.btnEditar.ImageKey = "Editar.png";
-            this.btnEditar.Location = new System.Drawing.Point(123, 337);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditar.Location = new System.Drawing.Point(184, 518);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 64);
+            this.btnEditar.Size = new System.Drawing.Size(112, 98);
             this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -137,10 +132,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnEliminar.Location = new System.Drawing.Point(227, 337);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Location = new System.Drawing.Point(340, 518);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 64);
+            this.btnEliminar.Size = new System.Drawing.Size(112, 98);
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -151,10 +145,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReporte.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnReporte.Location = new System.Drawing.Point(334, 337);
-            this.btnReporte.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReporte.Location = new System.Drawing.Point(501, 518);
             this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(75, 64);
+            this.btnReporte.Size = new System.Drawing.Size(112, 98);
             this.btnReporte.TabIndex = 7;
             this.btnReporte.Text = "Reporte";
             this.btnReporte.UseVisualStyleBackColor = false;
@@ -165,10 +158,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnSalir.Location = new System.Drawing.Point(442, 337);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Location = new System.Drawing.Point(663, 518);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 64);
+            this.btnSalir.Size = new System.Drawing.Size(112, 98);
             this.btnSalir.TabIndex = 8;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -176,11 +168,10 @@ namespace Sol_ProcesoCRUD.Presentacion
             // txtArticuloAlta
             // 
             this.txtArticuloAlta.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticuloAlta.Location = new System.Drawing.Point(529, 75);
-            this.txtArticuloAlta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArticuloAlta.Location = new System.Drawing.Point(794, 115);
             this.txtArticuloAlta.Name = "txtArticuloAlta";
             this.txtArticuloAlta.ReadOnly = true;
-            this.txtArticuloAlta.Size = new System.Drawing.Size(163, 23);
+            this.txtArticuloAlta.Size = new System.Drawing.Size(242, 30);
             this.txtArticuloAlta.TabIndex = 10;
             this.txtArticuloAlta.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -189,21 +180,19 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.lblArticulo.AutoSize = true;
             this.lblArticulo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArticulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.lblArticulo.Location = new System.Drawing.Point(526, 54);
-            this.lblArticulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblArticulo.Location = new System.Drawing.Point(789, 83);
             this.lblArticulo.Name = "lblArticulo";
-            this.lblArticulo.Size = new System.Drawing.Size(90, 19);
+            this.lblArticulo.Size = new System.Drawing.Size(136, 29);
             this.lblArticulo.TabIndex = 9;
             this.lblArticulo.Text = "Articulo(*):";
             // 
             // txtMarca
             // 
             this.txtMarca.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMarca.Location = new System.Drawing.Point(529, 134);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMarca.Location = new System.Drawing.Point(794, 206);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.ReadOnly = true;
-            this.txtMarca.Size = new System.Drawing.Size(163, 23);
+            this.txtMarca.Size = new System.Drawing.Size(242, 30);
             this.txtMarca.TabIndex = 12;
             // 
             // lblMarca
@@ -211,21 +200,19 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.lblMarca.Location = new System.Drawing.Point(526, 113);
-            this.lblMarca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMarca.Location = new System.Drawing.Point(789, 174);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(77, 19);
+            this.lblMarca.Size = new System.Drawing.Size(114, 29);
             this.lblMarca.TabIndex = 11;
             this.lblMarca.Text = "Marca(*):";
             // 
             // txtCategoria
             // 
             this.txtCategoria.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Location = new System.Drawing.Point(529, 257);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCategoria.Location = new System.Drawing.Point(794, 395);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.ReadOnly = true;
-            this.txtCategoria.Size = new System.Drawing.Size(119, 23);
+            this.txtCategoria.Size = new System.Drawing.Size(176, 30);
             this.txtCategoria.TabIndex = 14;
             // 
             // lblCategoria
@@ -233,21 +220,19 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.lblCategoria.Location = new System.Drawing.Point(526, 236);
-            this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategoria.Location = new System.Drawing.Point(789, 363);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(105, 19);
+            this.lblCategoria.Size = new System.Drawing.Size(155, 29);
             this.lblCategoria.TabIndex = 13;
             this.lblCategoria.Text = "Categoria(*):";
             // 
             // txtMedida
             // 
             this.txtMedida.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMedida.Location = new System.Drawing.Point(529, 198);
-            this.txtMedida.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMedida.Location = new System.Drawing.Point(794, 305);
             this.txtMedida.Name = "txtMedida";
             this.txtMedida.ReadOnly = true;
-            this.txtMedida.Size = new System.Drawing.Size(119, 23);
+            this.txtMedida.Size = new System.Drawing.Size(176, 30);
             this.txtMedida.TabIndex = 16;
             // 
             // lblMedida
@@ -255,10 +240,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.lblMedida.AutoSize = true;
             this.lblMedida.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.lblMedida.Location = new System.Drawing.Point(526, 177);
-            this.lblMedida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMedida.Location = new System.Drawing.Point(789, 272);
             this.lblMedida.Name = "lblMedida";
-            this.lblMedida.Size = new System.Drawing.Size(86, 19);
+            this.lblMedida.Size = new System.Drawing.Size(129, 29);
             this.lblMedida.TabIndex = 15;
             this.lblMedida.Text = "Medida(*):";
             // 
@@ -268,10 +252,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnMedida.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMedida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMedida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnMedida.Location = new System.Drawing.Point(651, 198);
-            this.btnMedida.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMedida.Location = new System.Drawing.Point(976, 305);
             this.btnMedida.Name = "btnMedida";
-            this.btnMedida.Size = new System.Drawing.Size(39, 23);
+            this.btnMedida.Size = new System.Drawing.Size(58, 35);
             this.btnMedida.TabIndex = 17;
             this.btnMedida.Text = ":::";
             this.btnMedida.UseVisualStyleBackColor = false;
@@ -283,10 +266,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnCatgoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCatgoria.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCatgoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnCatgoria.Location = new System.Drawing.Point(651, 257);
-            this.btnCatgoria.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCatgoria.Location = new System.Drawing.Point(976, 395);
             this.btnCatgoria.Name = "btnCatgoria";
-            this.btnCatgoria.Size = new System.Drawing.Size(39, 23);
+            this.btnCatgoria.Size = new System.Drawing.Size(58, 35);
             this.btnCatgoria.TabIndex = 18;
             this.btnCatgoria.Text = ":::";
             this.btnCatgoria.UseVisualStyleBackColor = false;
@@ -298,10 +280,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnGuardar.Location = new System.Drawing.Point(617, 295);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardar.Location = new System.Drawing.Point(926, 454);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 29);
+            this.btnGuardar.Size = new System.Drawing.Size(112, 45);
             this.btnGuardar.TabIndex = 19;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -313,10 +294,9 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(240)))), ((int)(((byte)(234)))));
-            this.btnCancelar.Location = new System.Drawing.Point(530, 295);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelar.Location = new System.Drawing.Point(795, 454);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 29);
+            this.btnCancelar.Size = new System.Drawing.Size(112, 45);
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -325,10 +305,10 @@ namespace Sol_ProcesoCRUD.Presentacion
             // 
             // Form_Articulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(173)))), ((int)(((byte)(190)))));
-            this.ClientSize = new System.Drawing.Size(713, 417);
+            this.ClientSize = new System.Drawing.Size(1070, 642);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCatgoria);
@@ -350,10 +330,10 @@ namespace Sol_ProcesoCRUD.Presentacion
             this.Controls.Add(this.txtArticulo);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.dtgArticulos);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Articulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Articulos";
+            this.Load += new System.EventHandler(this.Form_Articulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgArticulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

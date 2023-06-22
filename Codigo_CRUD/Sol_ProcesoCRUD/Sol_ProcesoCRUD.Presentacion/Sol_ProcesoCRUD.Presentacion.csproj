@@ -72,6 +72,7 @@
       <DependentUpon>Form_Articulos.cs</DependentUpon>
     </Compile>
     <Compile Include="Logica\Conexion.cs" />
+    <Compile Include="Logica\L_Articulos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Articulos.resx">

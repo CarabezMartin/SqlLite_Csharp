@@ -27,6 +27,7 @@ namespace Sol_ProcesoCRUD.Presentacion
         int codArticulo = 0;
         int codCategoria = 0;
         int codMedida = 0;
+        int estadoGuarda = 0;
 
         #endregion
 
@@ -44,14 +45,19 @@ namespace Sol_ProcesoCRUD.Presentacion
             btnCancelar.Visible = lEstado;
             btnCatgoria.Visible = lEstado;
             btnMedida.Visible = lEstado;
+
+            btnBuscar.Enabled = !lEstado;
+            txtArticulo.Enabled = !lEstado;
+            dtgArticulos.Enabled = !lEstado;
         }
 
-        private void Bloquear_botones(bool lEstado)
+        private void EstadoBotonesPrincipales(bool lEstado)
         {
-            btnEditar.Visible = lEstado;
-            btnReporte.Visible = lEstado;
-            btnEliminar.Visible = lEstado;
-            btnSalir.Visible = lEstado;
+            btnNuevo.Enabled = lEstado;
+            btnEditar.Enabled = lEstado;
+            btnReporte.Enabled = lEstado;
+            btnEliminar.Enabled = lEstado;
+            btnSalir.Enabled = lEstado;
         }
 
         private void Limpia_texto() 
@@ -62,22 +68,43 @@ namespace Sol_ProcesoCRUD.Presentacion
             txtCategoria.Clear();
         }
 
+        private void ListadoArticulos() 
+        {
+            Logica.L_Articulos cargaArticulos = new Logica.L_Articulos();
+            dtgArticulos.DataSource = cargaArticulos.ListadoArticulos();
+            
+        }
+
         #endregion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            //Cuando esta variable esta en 1 sinifica que es registro nuevo
+            estadoGuarda = 1;
             this.Estado_texto(true);
             this.Estado_botones(true);
-            this.Bloquear_botones(false);
+            this.EstadoBotonesPrincipales(false);
+            txtArticuloAlta.Focus();
 
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Bloquear_botones(true);
+            this.EstadoBotonesPrincipales(true);
             this.Estado_botones(false);
             this.Estado_texto(false);
             this.Limpia_texto();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            //Cuando esta variable esta en 0 sinifica que es actualizacion de registro
+            estadoGuarda = 0;
+        }
+
+        private void Form_Articulos_Load(object sender, EventArgs e)
+        {
+            ListadoArticulos();
         }
     }
 }
