@@ -55,9 +55,12 @@ namespace Sol_ProcesoCRUD.Presentacion
             // 
             // dtgArticulos
             // 
+            this.dtgArticulos.AllowUserToAddRows = false;
+            this.dtgArticulos.AllowUserToDeleteRows = false;
             this.dtgArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgArticulos.Location = new System.Drawing.Point(22, 83);
             this.dtgArticulos.Name = "dtgArticulos";
+            this.dtgArticulos.ReadOnly = true;
             this.dtgArticulos.RowHeadersWidth = 62;
             this.dtgArticulos.RowTemplate.Height = 28;
             this.dtgArticulos.Size = new System.Drawing.Size(753, 415);

@@ -68,10 +68,10 @@ namespace Sol_ProcesoCRUD.Presentacion
             txtCategoria.Clear();
         }
 
-        private void ListadoArticulos() 
+        private void ListadoArticulos(string cTexto) 
         {
             Logica.L_Articulos cargaArticulos = new Logica.L_Articulos();
-            dtgArticulos.DataSource = cargaArticulos.ListadoArticulos();
+            dtgArticulos.DataSource = cargaArticulos.ListadoArticulos(cTexto);
             
         }
 
@@ -104,7 +104,7 @@ namespace Sol_ProcesoCRUD.Presentacion
 
         private void Form_Articulos_Load(object sender, EventArgs e)
         {
-            ListadoArticulos();
+            ListadoArticulos("%");
         }
     }
 }
